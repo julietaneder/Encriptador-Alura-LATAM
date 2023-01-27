@@ -31,7 +31,7 @@ function encriptar(){
     document.querySelector(".mensajeTextoVacio").style.display = "none";
     btnCopiar.hidden= false;
     salidaTexto.hidden= false;
-
+    textoEntrada.value= ""; //Para que luego de encriptar o desencriptar, limpie el campo del textarea.
     textoSalida.textContent = codificar(normalizar);
 }
 

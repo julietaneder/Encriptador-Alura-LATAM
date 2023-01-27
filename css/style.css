@@ -140,9 +140,6 @@ main{
     border-radius: 15px;
     box-sizing: border-box;
     cursor: pointer;
-    /* position: relative;
-    margin-left: 50px;
-    margin-top: 480px; */
 }
 
 .botonCopiar:hover{
