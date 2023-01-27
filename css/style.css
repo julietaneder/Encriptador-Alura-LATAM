@@ -99,7 +99,7 @@ main{
 .sinMensaje{
     background-color: #FFFFFF;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 24px;
     text-align: center;
     padding: 3%;
 }
@@ -108,6 +108,7 @@ main{
     padding: 5%;
     background-color: #FFFFFF;
     text-align: center;
+    font-size: 18px;
 }
 
 .textareaSalida{
@@ -164,9 +165,72 @@ footer p{
 }
 
 @media screen and (max-width: 992px){
-    
+
+    main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .logo{
+        padding: 15px;
+        width: 10%;
+    }
+
+    .salidaConImagen{
+        width: 80%;
+    }
+
+    .munieco{
+        display: none;
+    }
+
+    .sinMensaje{
+        border-radius: 24px;
+    }
+
+    .botonCopiar, .botonDesencriptar, .botonEncriptar{
+        font-size: 16px;
+    }
+
+    .botonCopiar{
+        width: 100%;
+    }
+
 }
 
 @media screen and (max-width: 768px){
-    
+
+    main{
+        margin: auto;
+    }
+
+    .logo{
+        padding: 10px;
+        width: 15%;
+    }
+
+    #entradaTexto{
+        padding-left: 10px;
+        width: 100%;
+    }
+
+    .botones{
+        flex-direction: column;
+        margin: 0 5px;
+    }
+
+    .botonDesencriptar{
+        margin: 10px 0 0 0;
+    }
+
+    .salidaConImagen{
+        margin-bottom: 20px;
+    }
+
+    .sinMensaje, .mensajeTextoVacio{
+        line-height: 120%;
+    }
+
 }
