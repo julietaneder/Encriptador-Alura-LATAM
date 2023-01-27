@@ -1,41 +1,34 @@
-body{
-    font-family: 'Bitter', serif;
-    font-family: 'Montserrat', sans-serif;
-    background-color: #D8DFE8;
+*{
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    background-color: #F3F5FC;
 }
 
 .logo{
     padding: 15px;
+    width: 5%;
 }
 
 main{
-    width: 940px;
-    margin: auto;
-}
-
-.principal{
     display: flex;
-    flex-direction: column;
-    align-items: left;
+    justify-content: space-around;
+    margin: 0 0 50px 80px;
 }
 
 #entradaTexto {
-    font-family: 'Bitter', serif;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 32px;
-    font-weight: bold;
-    resize: none;
-    color: #0A3871;
-    background-color: #D8DFE8;
-    width: 500px; 
-    height: 500px;
-    max-width: 100%;
     border: none;
+    color: #0A3871;
+    resize: none;
+    text-transform: lowercase;
+    margin-top: 30px;
 }
 
-.botones{
-    grid-area: botones;
-}
+::placeholder {color: #0A3871;}
+    #entradaTexto:focus{
+        outline: none;
+    }
 
 .informacion{
     padding: 15px;
@@ -44,36 +37,35 @@ main{
     color: #495057;
 }
 
+.botones{
+    display: flex;
+    align-items: center;
+}
+
 .botonEncriptar{
-    margin-right: 20px;
-    width:25%;
-    height: 45px;
-    font-size: 16px;
+    width:328px;
+    height: 67px;
     color:#FFFFFF;
     background: #0A3871;
-    font-family: 'Montserrat', sans-serif;
-    border:none;
-    border-radius: 10px;
+    border: 1px solid #0A3871;
+    border-radius: 15px;
     cursor: pointer;
 }
 
 .botonEncriptar:hover{
     background: #67808E;
     color: #000000;
-    font-weight: bold;
 }
 
 .botonDesencriptar{
-    width: 25%;
-    height: 45px;
-    font-size: 16px;
-    font-weight: bold;
+    width: 328px;
+    height: 67px;
     color: #0A3871;
     background-color: #D8DFE8;
-    font-family: 'Montserrat', sans-serif;
-    border-color: #0A3871;
-    border-radius: 10px;
+    border: 1px solid #0A3871;
+    border-radius: 15px;
     cursor: pointer;
+    margin-left: 30px;
 }
 
 .botonDesencriptar:hover{
@@ -81,55 +73,31 @@ main{
     color: #000000;
 }
 
-.botonCopiar{
-    align-items: center;
-    width:140px;
-    height: 33px;
-    font-size: 16px;
-    font-weight: bold;
-    color: #0A3871;
-    background-color: white;
-    font-family: 'Montserrat', sans-serif;
-    border-color: #0A3871;
-    border-radius: 10px;
-    cursor: pointer;
-    margin-left: 80px;
-    margin-bottom: -145px ;
-}
-
-.botonCopiar:hover{
-    background: black;
-    color: white;
-    border-color: black;
-}
-
 .salidaConImagen{
-    align-items: center;
-    align-content: center;
-    background-color: white;
-    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08); 
+    background-color: #FFFFFF;
+    border: none;
     border-radius: 30px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding: 2%;
-    text-align: center;
-    width: 300px;
-    height: 600px;
-    position: absolute;
-    margin-left: 700px;
-    margin-top: -650px;
-    
+    color: #0A3871;
+    margin-top: 20px;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    width: 400px;
+}
+
+.salidaConImagen:focus{
+    outline: none;
 }
 
 .munieco{
     width: 90%;
     height:auto;
-    align-items: center;
+    margin-left: 15px;
     display: inline-block;
+    background-color: #FFFFFF;
+    margin-top: 20px;
 }
 
 .sinMensaje{
+    background-color: #FFFFFF;
     font-weight: bold;
     font-size: 20px;
     text-align: center;
@@ -138,28 +106,67 @@ main{
 
 .mensajeTextoVacio{
     padding: 5%;
+    background-color: #FFFFFF;
+    text-align: center;
+}
+
+.textareaSalida{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #FFFFFF;
+    border-radius:30px;
+    padding: 10px;
 }
 
 #salidaTexto{
-    font-family: 'Montserrat', sans-serif;
-    text-align: left;
     border: none;
     resize: none;
-    font-size: 24px;
     color:#0A3871;
-    width: 300px;
-    height: 400px;
+    background-color: #FFFFFF;
+}
+
+#salidaTexto:focus{
+    outline: none;
+}
+
+.botonCopiar{
+    width:300px;
+    height: 67px;
+    color: #0A3871;
+    border: 1px solid #0A3871;
+    border-radius: 15px;
+    box-sizing: border-box;
+    cursor: pointer;
+    /* position: relative;
+    margin-left: 50px;
+    margin-top: 480px; */
+}
+
+.botonCopiar:hover{
+    background: #67808E;
+    color: #FFFFFF;
+    border-color: #0A3871;
 }
 
 footer{
     background-color: #0A3871;
-    width: 100%;
     text-align: center;  
     color: #FFFFFF;
-    font-size: 10px;
+    font-size: 12px;
     bottom: 0;
-    position:fixed;
-    margin-top: 25px;
     padding: 10px;    
 }
 
+footer p{
+    background-color: #0A3871;
+}
+
+@media screen and (max-width: 992px){
+    
+}
+
+@media screen and (max-width: 768px){
+    
+}

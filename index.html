@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
-
-    <title>Encriptador - Alura LATAM</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@300;400;600&family=Inter:wght@300&display=swap" rel="stylesheet">
+    <title>Encriptador de texto</title>
 </head>
 
 <body>
@@ -20,25 +21,33 @@
 
     <main>
 
-        <div class="principal"> 
+        <section class="principal"> 
 
-            <textarea id="entradaTexto" class="mensajeAEncriptar" placeholder="Ingrese el texto aquí" autofocus></textarea>
-            <h4 class="informacion">&#9888;  Ingresa solo letras minúsculas y sin tildes.</h4>
+            <textarea id="entradaTexto" class="mensajeAEncriptar" cols="30" rows="10" placeholder="Ingrese el texto aquí" autofocus></textarea>
+
+            <div class="informacion">   
+                <h6>&#9888;  Ingresa solo letras minúsculas y sin tildes.</h6>
+            </div>
 
             <div class="botones">
                 <button id="btnEncriptar" class="botonEncriptar"  onclick="encriptar()">Encriptar</button>
                 <button id="btnDesencriptar" class="botonDesencriptar" onclick="desencriptar()">Desencriptar</button>
             </div>
 
-        </div>
+        </section>
         
         <section class="salidaConImagen">
 
             <img src="./images/Muñeco.png" alt="Muñeco conlupa"class="munieco">
             <h2 class="sinMensaje"id="mensajeSalida">Ningún mensaje fue encontrado.</h2>
             <p class="mensajeTextoVacio">Ingresa el texto que desees encriptar o desencriptar.</p>
+
+            <div class="textareaSalida">
+
             <textarea id="salidaTexto" readonly></textarea>
-            <button id="btnCopiar"class="botonCopiar"onclick="copiar()">Copiar</button>
+            <button id="btnCopiar" class="botonCopiar" onclick="copiar()">Copiar</button>
+
+            </div>
 
         </section>
 

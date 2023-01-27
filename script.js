@@ -42,7 +42,7 @@ function desencriptar(){
     textoSalida.textContent = decodificar(normalizar);
     document.querySelector(".munieco").style.display = "none";
     document.querySelector(".sinMensaje").style.display = "none";
-    document.querySelector(".mensajeTexto-Vacio").style.display = "none";
+    document.querySelector(".mensajeTextoVacio").style.display = "none";
     btnCopiar.hidden= false;
     salidaTexto.hidden= false;
 }
